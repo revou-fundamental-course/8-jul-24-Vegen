@@ -1,0 +1,55 @@
+.main-title {
+    text-align: center;
+}
+main {
+    display: flex;
+    justify-content: space-around;
+}
+.main-content {
+    padding: 12px;
+    flex: 1;
+    border: none;
+}
+.Input-title {
+    font-size: 20px;
+    font-weight: bolder;
+}
+.submit {
+    background-color: aqua;
+    border: 2px solid aqua;
+    border-radius: 8px;
+}
+.form{
+    padding: 15px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+.reset{
+    border: 1px solid black;
+    border-radius: 10px
+}
+.button {
+    height: 30px;
+    align-content: end;
+}
+input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+  }
+  
+  input[type=number]:focus {
+    border: 3px solid #555;
+  }
+  .result {
+    border: none;
+    text-align: center;
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 10px;
+  }
