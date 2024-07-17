@@ -21,6 +21,7 @@
       background-color: beige;
     }
   
+    /* Style main title */
     h1 {
     color: black;
     font-weight: bold;
@@ -164,26 +165,6 @@
       padding: 5px;
   }
   
-  .footer {
-      display: flex;
-      justify-content: start;
-      align-items: center;
-      padding: 10px 15px
-  }
-  
-  .footer-text {
-      text-decoration: none;
-      color: rgba(40, 40, 40, 0.8);
-      font-family: 'Poppins', sans-serif;
-      font-weight: 200;
-      font-size: 14px;
-      transition: all 0.5;
-  }
-  
-  .footer-text:hover {
-      color: rgba(40, 40, 40, 1);
-  }
-  
   .gender {
       display: flex;
       justify-content: space-around;
@@ -196,12 +177,12 @@
       margin-bottom: 20px;
   }
   
-    /* Style for Radio */
+    /* Style untuk radio */
   .gender .container {
       display: block;
       position: relative;
       padding-left: 35px;
-      /* margin-bottom: 12px; */
+      margin-bottom: 7px;
       margin-top: 7px;
       cursor: pointer;
       font-size: 22px;
@@ -211,14 +192,14 @@
       user-select: none;
     }
     
-    /* Hide the browser's default radio button */
+    /* Untuk menghilangkan radio button bawaan browser */
     .gender .container input {
       position: absolute;
       opacity: 0;
       cursor: pointer;
     }
     
-    /* Create a custom radio button */
+    /* Button Radio kostum buatan sendiri */
     .checkmark {
       position: absolute;
       top: 0;
@@ -228,30 +209,25 @@
       background-color: #eee;
       border-radius: 50%;
     }
-    
-    /* On mouse-over, add a grey background color */
-    .gender .container:hover input ~ .checkmark {
-      background-color: #ccc;
-    }
-    
-    /* When the radio button is checked, add a blue background */
+     
+    /* Ketika memencet radio button maka muncul warna pink */
     .gender .container input:checked ~ .checkmark {
       background-color: pink;
     }
     
-    /* Create the indicator (the dot/circle - hidden when not checked) */
+    /* Untuk indikator (dot/titik - tersembunyi kertika tidak dipilih) */
     .checkmark:after {
       content: "";
       position: absolute;
       display: none;
     }
     
-    /* Show the indicator (dot/circle) when checked */
+    /* memperlihatkan indikator ketika dipilih */
     .gender .container input:checked ~ .checkmark:after {
       display: block;
     }
     
-    /* Style the indicator (dot/circle) */
+    /* style untuk indikator */
     .gender .container .checkmark:after {
          top: 9px;
         left: 9px;
@@ -260,8 +236,8 @@
         border-radius: 50%;
         background: white;
     }
-    /* END Style for Radio */
-  
+   
+    /* container untuk tinggi dan berat */
   .containerHW {
       display: flex;
       justify-content: space-around;
