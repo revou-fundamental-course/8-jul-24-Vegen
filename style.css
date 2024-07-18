@@ -196,12 +196,11 @@
     margin-bottom: 20px;
 }
 
-  /* Style for Radio */
+  /* style untuk radio */
 .gender .container {
     display: block;
     position: relative;
     padding-left: 35px;
-    /* margin-bottom: 12px; */
     margin-top: 7px;
     cursor: pointer;
     font-size: 22px;
@@ -211,14 +210,14 @@
     user-select: none;
   }
   
-  /* Hide the browser's default radio button */
+  /* menghilangkan radio button original yg berasal dari browser */
   .gender .container input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
   }
   
-  /* Create a custom radio button */
+  /* radio button costum */
   .checkmark {
     position: absolute;
     top: 0;
@@ -229,12 +228,12 @@
     border-radius: 50%;
   }
   
-  /* On mouse-over, add a grey background color */
+  /* ketika mouse hover ke radio maka beri background abu-abu */
   .gender .container:hover input ~ .checkmark {
     background-color: #ccc;
   }
   
-  /* When the radio button is checked, add a blue background */
+  /* ketika radio button dipilih maka muncul warna pink */
   .gender .container input:checked ~ .checkmark {
     background-color: pink;
   }
@@ -246,12 +245,12 @@
     display: none;
   }
   
-  /* Show the indicator (dot/circle) when checked */
+  /* memperlihatkan indikator ketika dipencet */
   .gender .container input:checked ~ .checkmark:after {
     display: block;
   }
   
-  /* Style the indicator (dot/circle) */
+  /* style untuk indikator radio */
   .gender .container .checkmark:after {
        top: 9px;
       left: 9px;
@@ -260,7 +259,7 @@
       border-radius: 50%;
       background: white;
   }
-  /* END Style for Radio */
+  /* Style terakhir untuk radio */
 
 .containerHW {
     display: flex;
@@ -272,32 +271,29 @@
 
 
 
-/* The Modal (background) */
+/* Modal atau notif harap isi ketika belum mengisi semua data yg diperlukan */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
   padding-top: 300px;
 
 }
 
-/* Modal Content */
+/* Content modal */
 .modal-content {
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 600px;
+  width: 200px;
   border-radius: 10px;
-  box-shadow: #393c76 -1px 2px 2px 1px;
 }
 
 #modalText {
@@ -316,7 +312,7 @@ border: 2px solid red;
   border: 2px solid green;
   }
 
-/* The Close Button */
+/* tombol tutup (x) didalam modal */
 .close {
   color: #aaaaaa;
   float: right;
@@ -329,40 +325,7 @@ border: 2px solid red;
 .close:hover {
   color: #d41111; 
 }
-
-
-
-
-
-.linkDownload {
-    position: fixed;
-    background-color: #d12322;
-    margin: 20px;
-    padding: 10px 10px;
-    left: -0px;
-    border-radius: 5px;
-    bottom: -0px;
-    font-size: 16px;
-    font-weight: 400;
-    color: #fff;
-    text-decoration: none;
-    text-transform: capitalize;
-    transition: all 0.43s ease-in-out;
-
-
-  }
-
   
-.linkDownload i {
-    padding-left: 7px;
-  }
-  
-  .linkDownload:hover {
-    text-decoration: none;
-    background-color: black;
-  }
-  
-
 @media (max-width: 700px){
 
 
