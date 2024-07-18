@@ -50,3 +50,14 @@ document.querySelector("#result").innerHTML = bmi.toFixed(2);
 }
 
 
+// Ketika memencet (x) saat notif harap isi maka akan ditutup notifnya
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// Ketika memencet area diluar notif harap isi maka akan ditutup notifnya
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
