@@ -1,3 +1,4 @@
+// variabel yang akan dipakai
 var usia = document.getElementById("usia");
 var tinggi = document.getElementById("tinggi");
 var berat = document.getElementById("berat");
@@ -5,11 +6,17 @@ var male = document.getElementById("laki-laki");
 var female = document.getElementById("perempuan");
 let resultArea = document.querySelector(".comment");
 
+modalContent = document.querySelector(".modal-content");
+modalText = document.querySelector("#modalText");
+var modal = document.getElementById("myModal");
+var span = document.getElementsByClassName("close")[0];
+
+// function yang akan berjalan ketika menekan tombol menghitung BMI
 function calculate(){
  
   if(usia.value=='' || tinggi.value=='' || berat.value=='' || (male.checked==false && female.checked==false)){
     modal.style.display = "block";
-    modalText.innerHTML = `All fields are required!`;
+    modalText.innerHTML = `Harap isi semua data!`;
 
   }else{
     countBmi();
@@ -17,7 +24,7 @@ function calculate(){
 
 }
 
-
+// rumus untuk menghitung BMI
 function countBmi(){
   var p = [usia.value, tinggi.value, berat.value];
   if(male.checked){
@@ -28,6 +35,7 @@ function countBmi(){
 
   var bmi = Number(p[2])/(Number(p[1])/100*Number(p[1])/100);
       
+  // info mengenai BMI setelah mengetahui result
   var result = '';
   if(bmi<18.5){
     result = 'Kekurangan berat badan';
@@ -42,7 +50,7 @@ function countBmi(){
      }
 
 
-
+// comment dari result
 resultArea.style.display = "block";
 document.querySelector(".comment").innerHTML = `Kamu <span id="comment">${result}</span>`;
 document.querySelector("#result").innerHTML = bmi.toFixed(2);

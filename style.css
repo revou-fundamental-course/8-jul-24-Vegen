@@ -5,6 +5,7 @@
   font-family: monospace;
   }
     
+  /* body kalkulator */
   body{
     display: flex;
     align-items: center;
@@ -30,12 +31,13 @@
   }
 
 
-    
+    /* style untuk form */
     .content {
         padding: 0 30px;
         
     }
     
+    /* style input usia */
     .input {
       background: white;
       border-radius: 12px;
@@ -61,6 +63,7 @@
       font-family: "Nunito", sans-serif;
     }
     
+    /* style input berat badan */
     .inputW {
         background: #fff;
         box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
@@ -87,6 +90,7 @@
         font-family: "Nunito", sans-serif;
     }
 
+    /* style input tinggi badan */
     .inputH {
         background: #fff;
         box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
@@ -114,7 +118,7 @@
         font-family: "Nunito", sans-serif;
     }
 
-  
+  /* Style button calculate */
     button.calculate {
       cursor: pointer;
       font-family: monospace;
@@ -133,7 +137,7 @@
   }
 
   
-  
+  /* style result dari perhitungan kalkulator BMI */
 .result {
     padding: 10px 20px;
   }
@@ -153,6 +157,8 @@
     border-radius: 55px;
     margin-bottom: 25px;
   }
+
+  /* Comment untuk pernyataan hasil BMI (Kamu) */
   #comment {
   color: pink;
   font-weight: 800;
@@ -165,26 +171,7 @@
     padding: 5px;
 }
 
-.footer {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    padding: 10px 15px
-}
-
-.footer-text {
-    text-decoration: none;
-    color: rgba(40, 40, 40, 0.8);
-    font-family: 'Poppins', sans-serif;
-    font-weight: 200;
-    font-size: 14px;
-    transition: all 0.5;
-}
-
-.footer-text:hover {
-    color: rgba(40, 40, 40, 1);
-}
-
+/* style untuk pilihan gender */
 .gender {
     display: flex;
     justify-content: space-around;
@@ -325,38 +312,4 @@ border: 2px solid red;
 
 .close:hover {
   color: #d41111; 
-}
-  
-@media (max-width: 700px){
-
-
-    .box {
-        width: 380px;
-    }
-
-
-
-    
-    .input label {
-
-        font-size: 18px;
-    }
-
-    .inputH label, .inputW label {
-        font-size: 14px;
-    }
-
-
-    .input input, .inputH input, .inputW input{
-        font-size: 24px;
-    }
-
-
-    .modal-content {
-
-      width: 380px;
-    }
-
-
-
 }
