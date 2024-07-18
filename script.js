@@ -11,7 +11,7 @@ modalText = document.querySelector("#modalText");
 var modal = document.getElementById("myModal");
 var span = document.getElementsByClassName("close")[0];
 
-// function yang akan berjalan ketika menekan tombol menghitung BMI
+// function yang akan berjalan ketika menekan button menghitung BMI
 function calculate(){
  
   if(usia.value=='' || tinggi.value=='' || berat.value=='' || (male.checked==false && female.checked==false)){
